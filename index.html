@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue.Js Tutorail</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+</head>
+
+<body>
+    <div id="vue-app">
+      <food-app>
+          <h2>อาหารอีสาน</h2>
+          <ul>
+              <li>ลาบวัว</li>
+              <li>ไก่ย่าง</li>
+          </ul>
+      </food-app>
+      <food-app>
+          <h2>อาหารใต้</h2>
+          <ul>
+              <li>แกงเหลือง</li>
+              <li>แกงไตปลา</li>
+          </ul>
+      </food-app>
+    </div>
+    <template id="foodarea">
+        <div id="food">
+            <h4>เมนูอาหาร</h4>
+            <slot></slot>
+            <h6>อาหารขื่อดังของเมืองไทย</h6>
+       </div>
+    </template>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
